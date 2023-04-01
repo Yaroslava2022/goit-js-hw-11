@@ -10,7 +10,7 @@ const galleryList = document.querySelector('.gallery')
 function fetchCountries() {
     const image = inputEl.value.trim(); 
    
-        return fetch(`https://pixabay.com/api/?key=24900959-71ad91e9c5a66d7f732acf0b4&q=cat&image_type=photo&orientation=horizontal&safesearch=true`).then(
+        return fetch(`https://pixabay.com/api/?key=24900959-71ad91e9c5a66d7f732acf0b4&q=${image}&image_type=photo&orientation=horizontal&safesearch=true`).then(
      (res) => {
        if (!res.ok) {
          throw new Error(res.status);
@@ -62,4 +62,3 @@ function fetchCountries() {
       countryList.innerHTML = "",
       );
     });
-console.log(fetchCountries());
