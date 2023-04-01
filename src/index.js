@@ -52,13 +52,10 @@ function fetchCountries() {
    inputEl.addEventListener("input", () => {
    
     fetchCountries( )
-      .then((users) =>
-        renderCountriesList(users) 
+      .then((users) => {
+        renderCountriesList(users)}
 )
       .catch((error) => 
-      
       Notiflix.Notify.failure('Oops, there is no country with that name'),
-      countryInfEl.innerHTML = "",
-      countryList.innerHTML = "",
       );
     });
