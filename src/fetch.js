@@ -14,15 +14,6 @@ export async function fetchImages(page, per_page) {
   })
    
   const response = await axios.get(`${base_url}?key=${key}&q=${image}&${searchParams}&page=${page}&per_page=${per_page}`);
-  //   .then(
-  //    (res) => {
-  //      if (!res.ok) {
-  //        throw new Error(res.status);
-  //           }
-  //           const result = res.json();
-            
-  //      return result;
-  //    }
-  //  );
+
   return response;
    }

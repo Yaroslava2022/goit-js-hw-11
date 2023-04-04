@@ -31,7 +31,7 @@ export const renderImagesList = (data) => {
          </div>
 </div>`
   }).join("");
-  // galleryList.insertAdjacentHTML('beforeend', markup);
+
   galleryList.innerHTML = markup;
 };
 

@@ -14,20 +14,6 @@ const per_page = 40;
 let gallery = new SimpleLightbox('.gallery a', { captionDelay: 250, });
 
 
-
-
-// const showBigPicture = () => {
-
-//    gallery.captionDelay = 250;
-//   gallery.on('show.simplelightbox');
- 
-// };
-// const refreshBigPicture = () => {
-//   let gallery = new SimpleLightbox('.gallery a');
-  
-//   gallery.refresh();
- 
-// };
 inputFormEl.addEventListener('submit', async (e) => {
   e.preventDefault();
   page = 1;
@@ -62,6 +48,8 @@ inputFormEl.addEventListener('submit', async (e) => {
     };
   }
 });
+
+
 async function handleLoadMoreImages() {
   page += 1;
  try {
